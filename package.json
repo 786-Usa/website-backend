@@ -5,6 +5,7 @@
     "type": "module",
     "scripts": {
         "start": "node src/index.js",
+        "vercel-build": "echo 'Vercel uses api/index.js'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -23,6 +24,7 @@
         "joi": "^18.0.1",
         "rate-limit-redis": "^4.2.2",
         "react-google-recaptcha": "^3.1.0",
+        "serverless-http": "^4.0.0",
         "winston": "^3.17.0"
     }
 }
