@@ -1,10 +1,6 @@
-import express from "express";
+// api/index.js
 import serverless from "serverless-http";
+import app from "../src/app.js";
 
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Backend running on Vercel!");
-});
-
+// Wrap the existing app from src/app.js
 export default serverless(app);
