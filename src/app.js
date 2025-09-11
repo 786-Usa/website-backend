@@ -9,6 +9,7 @@ import { startRedisQueueProcessor } from "./queue.js";
 
 const app = express();
 app.use(express.json({ limit: "30kb" }));
+app.set("trust proxy", 1);
 
 // security & cors already configured in index.js or you can move here
 app.use(globalLimiter);
